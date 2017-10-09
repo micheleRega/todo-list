@@ -1,0 +1,251 @@
+
+
+
+
+body{
+    color: #7b8b8e;
+}
+
+
+.app-white{
+    color: #FFFFFF;
+}
+.app-pointer{
+    cursor: pointer;
+}
+
+/*LOGIN*/
+.app-login{
+
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height:470px;
+}
+
+.app-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.app-title{
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5.2px;
+    margin-bottom: 10px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+.app-text-mid{
+    font-size: 24px;
+    letter-spacing: 2.1px;
+    margin-bottom: 25px;
+}
+
+.app-btn{
+    border: 1px solid #7b8b8e;
+    padding: 15px 20px;
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 20px 10px 15px 0;
+
+}
+
+.app-btn:hover{
+    color: #FFFFFF;
+    background-color: #7fcae0;
+    border-color:#7fcae0;
+    cursor:pointer;
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    -ms-transition: all 0.25s ease-out 0s;
+    -o-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+
+.app-form-error{
+    color: #e15258;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+/*END LOIGIN*/
+
+/*NAVIGATION*/
+.app-navigation{
+    line-height: 80px;
+    box-shadow: 0 0 1px rgba(0,65,94,0.2);
+    z-index: 100;
+    transition: height 600ms 0s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #637a91;
+}
+
+.app-navigation-container{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.app-logo{
+    font-size: 46px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5.2px;
+    font-weight: bold;
+    color: #FFFFFF;
+    float: left;
+}
+
+.app-navigation-items{
+    float: right;
+}
+ul.app-navigation-items-list > li{
+    float: left;
+    margin-left: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* END NAVIGATION*/
+
+
+/*PAGE*/
+.list-page-container{
+    position: relative;
+    top:260px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 750px;
+}
+
+.list-page-container .app-add-task{
+    position: relative;
+}
+.app-add-task > i {
+    position: absolute;
+    padding: 10px;
+    line-height: 20px;
+}
+.app-add-task .form-text{
+    padding-left: 30px;
+    width: 100%;
+    margin-top: 25px;
+    height: 40px;
+    font-size: 21px;
+}
+
+/*END PAGE*/
+
+
+
+
+/*INPUT*/
+.app-input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #7b8b8e;
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 1px;
+    caret-color:#7fcae0;
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    -ms-transition: all 0.25s ease-out 0s;
+    -o-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+
+.app-input:focus {
+    border-bottom: 2px solid #7fcae0;
+    opacity: 1;
+
+}
+
+/*END INPUT*/
+
+/*LIST COMPONENT*/
+
+.app-add-task-btn, .app-add-task-btn-disabled{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7b8b8e;
+    margin-top: 15px;
+    padding: 16px;
+
+}
+
+.app-add-task-btn-disabled{
+    opacity: 0.3;
+}
+
+.app-add-task-btn:hover{
+    color: #FFFFFF;
+    background-color: #7fcae0;
+    border-color:#7fcae0;
+    cursor:pointer;
+    -webkit-transition: all 0.25s ease-out 0s;
+    -moz-transition: all 0.25s ease-out 0s;
+    -ms-transition: all 0.25s ease-out 0s;
+    -o-transition: all 0.25s ease-out 0s;
+    transition: all 0.25s ease-out 0s;
+}
+
+
+.app-task-list{
+    position: relative;
+    margin-top: 30px;
+}
+.app-task-list .app-checkbox{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    display: flex;
+    background-color: transparent;
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+    float: left;
+}
+
+.app-task-list .app-checkbox:hover{
+    border: 3px solid #7fcae0 ;
+}
+
+.app-task-list .app-task-item{
+    float: left;
+    line-height: 35px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.app-task-list .app-task-row{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/*END LIST*/
+
+
+

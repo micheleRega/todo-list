@@ -1,0 +1,11 @@
+<nav class="app-navigation">
+    <div class="app-navigation-container container">
+        <div class="app-logo">ToDo List</div>
+        <div class="app-navigation-items">
+            <ul class="app-navigation-items-list" *ngIf="user">
+                <li>{{user.username}}</li>
+                <li (click)="logout()" class="app-pointer">Logout</li>
+            </ul>
+        </div>
+    </div>
+</nav>
